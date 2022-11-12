@@ -12,8 +12,7 @@ public class MainByXml {
 		GenericXmlApplicationContext ctx = 
 				new GenericXmlApplicationContext("classpath:config.xml");
 
-		// 스프링 컨테이너를 통해 AuthenticationService 객체 구하기
-
+		// 스프링 컨테이너를 통해 AuthenticationService 객체 구하기(IoC)
 		AuthenticationService authSvc =
 				ctx.getBean("authenticationService", AuthenticationService.class);
 
